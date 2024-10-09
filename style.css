@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background-color: #323232; /* Dunkler Hintergrund für guten Kontrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; /* Vollständige Höhe des Viewports */
+}
+
+#content {
+  position: relative; /* Dies ist wichtig für die korrekte Positionierung der Gewinnlinie */
+  margin-bottom: 20px;
+}
+
+table {
+  border-collapse: collapse; /* Entfernt den Abstand zwischen den Zellen */
+  margin: 20px auto; /* Zentriert die Tabelle */
+}
+
+td {
+  width: 100px; /* Breite der Zellen */
+  height: 100px; /* Höhe der Zellen */
+  text-align: center; /* Zentriert den Text in den Zellen */
+  font-size: 24px; /* Schriftgröße in den Zellen */
+  border: 4px solid white; /* Rahmen um die Zellen */
+}
+
+td:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Hintergrundfarbe beim Hover-Effekt */
+  cursor: pointer; /* Zeigt an, dass die Zelle klickbar ist */
+}
+
+tr:first-child td {
+  border-top: none; /* Entfernt den oberen Rahmen der ersten Zeile */
+}
+
+tr:last-child td {
+  border-bottom: none; /* Entfernt den unteren Rahmen der letzten Zeile */
+}
+
+td:first-child {
+  border-left: none; /* Entfernt den linken Rahmen der ersten Spalte */
+}
+
+td:last-child {
+  border-right: none; /* Entfernt den rechten Rahmen der letzten Spalte */
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0fa6dd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7cd2f1;
+}
